@@ -1,0 +1,39 @@
+                                    Minimum Amount of Time to Fill Cups
+
+
+
+class Solution:
+    def fillCups(self, amount: List[int]) -> int:
+        res = 0
+        amount = sorted(amount,reverse=True)
+        cold =amount[0]
+        warm=amount[1]
+        hot=amount[2]
+        
+        while cold > 0 and warm > 0 and hot>0:
+            temp = [cold ,warm ,hot]
+            temp = sorted(temp)
+            max1, max2, max3=temp[-1], temp[-2], temp[-3]
+            res += 1
+            max1 -= 1
+            max2 -= 1
+            cold, warm, hot=max1, max2, max3
+        while cold>0 and warm>0:
+            res += 1
+            cold -=1
+            warm -=1
+            
+        while cold>0 and hot>0:
+            res += 1
+            cold -= 1
+            warm -= 1
+        while warm>0 and hot>0:
+            res += 1
+            warm -= 1
+            hot -= 1
+        while cold>=0 and warm>=0 and hot>=0:
+            print(cold,warm,hot)
+            res += max(cold,warm,hot)
+            return res
+        return res
+        
