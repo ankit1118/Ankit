@@ -1,0 +1,25 @@
+                                              Smallest Number in Infinite Set
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+class SmallestInfiniteSet:
+
+    def __init__(self):
+        self.nums = set([i for i in range(1, 1001)])
+        self.temp = set()
+        
+
+    def popSmallest(self) -> int:
+        min_val = min(self.nums)
+        self.nums.remove(min_val)
+        self.temp.add(min_val)
+        return min_val
+        
+
+    def addBack(self, num: int) -> None:
+        if num in self.temp:
+            self.nums.add(num)
+            self.temp.remove(num)
