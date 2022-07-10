@@ -1,0 +1,30 @@
+                                      Move Pieces to Obtain a String
+
+class Solution:
+    def canChange(self, start: str, target: str) -> bool:
+        i,j,c,d,e,f = len(start) -1,0,0,0,0,0
+        for k in range(len(target) -1,-1,-1):
+            if target[k]== 'R':
+                i,g=min(i,k) , False
+                while i>=0:
+                    if start[i] != '_':
+                        g=start[i]=='R'
+                        break
+                    i -= 1 if start[i] == '_' else 0
+                if not g:
+                    return False
+        for k in range(0, len(target)):
+            if target[k] == 'L':
+                j, g = max(j, k), False
+                while j < len(target):
+                    if start[j] != '_':
+                        g = start[j] == 'L'
+                        break
+                    j += 1 if start[j] == '_' else 0
+                if not g:
+                    return False
+        for g in start:
+            e, f = e + 1 if g == 'L' else e, f + 1 if g == 'R' else f
+        for g in target:
+            c, d = c + 1 if g == 'L' else c, d + 1 if g == 'R' else d
+        return e == c and f == d
