@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+  <style>
+    .content{
+        display: flex;
+       /* flex-direction: column;*/
+       flex-direction: row;
+      /* flex-direction: column-reverse;*/
+     /* flex-direction: row-reverse;*/
+                                 /* flexwrap property*/
+    flex-wrap: wrap;              
+    /* flex-wrap: wra p-reverse;
+     flex-wrap: nowrap;         */
+
+     /*  justify content property*/
+     justify-content: flex-start;
+     height: 150vh;
+     background-color:aqua;
+     align-items: center;
+     align-content:center;
+    
+    
+    }
+     
+    .box1{
+        background-color:red;
+        height: 250px;
+        width: 300px;
+        border: 2px solid black;
+
+    }
+    .box2{background-color:blue;
+        height: 250px;
+        width: 300px;
+        border: 2px solid black;
+
+    }
+
+  </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box2">box2a</div>
+        <div class="box2">box2b</div>
+    </div>
+</body>
+</html>

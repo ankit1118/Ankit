@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            padding-top: 88px !important;
+            padding-bottom: 120px;
+            display: block;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        .lrpad{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .tpad{
+            padding-top: 60px;
+            list-style: none;
+        }
+        .wrap{
+            left: 33.33%;
+            position: relative;
+            width: 33.33%;
+            text-align: center !important;
+            float: left;
+            min-height: 1px;
+            padding-left: 0;
+            list-style: none;
+            display: block;
+            line-height: 1.6;
+        }
+        .login{
+            line-height: 1.4;
+            font-size: 1.57143em;
+            font-weight: 400;
+            font-family: oswald,sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-style: normal;
+        }
+        input[type=email], select {
+            width: 100%;
+            max-width: 100%;
+            padding: 8px 10px;
+            margin: 0 0 1em;
+            background-color: transparent;
+            outline: none;
+            display: block;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: black;
+            line-height: 1.42;
+        }
+        input[type=password], select {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 1em;
+            padding: 8px 10px;
+            background-color: transparent;
+            outline: none;
+            display: block;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            line-height: 1.42;
+        }
+        input[type=submit], select {
+            width: 100%;
+            padding: 8px 10px;
+            margin: 0;
+            line-height: 1.42;
+            font-weight: 400;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            vertical-align: middle;
+            box-sizing: border-box;
+            background-color: rgb(255, 157, 0);
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .registe-createac{
+            font-size: 15.4px;
+            margin: 0 0 15px;
+            font-family: Futura,sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            text-align: center !important;
+            list-style: none;
+            color: rgb(15, 15, 14);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="lrpad">
+            <div class="tpad">
+                <div class="wrap">
+                    <div class="customerLoginform">
+                        <p class="login">LOGIN</p>
+                        <form action="/action/login">
+                            <input type="email"  id="email2" placeholder="name@example.com">
+                            <input type="password"  id="email1" placeholder="Password">
+                            <P><input type="submit" value="Sign In "></P>
+                            <p class="registe-createac">
+                                <a href="/account/register" id="customer_register_link">Create account</a>
+                                <span>•</span>
+                                <a href="#recover" id="RecoverPassword">Forgot password</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

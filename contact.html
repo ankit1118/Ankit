@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .padtb{
+            padding-top: 30px;
+            padding-bottom: 80px;
+            
+        }
+        .padlr{
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 50px;
+            
+        }
+        .small-size{
+           /* width: auto;
+            min-width: 400px;
+            max-width: 800px;*/
+            /*display: grid;*/
+            position: relative;
+            left: 16.66%;
+            width: 66.66%;
+            float: left;
+            min-height: 1px;
+            padding-left: 0;
+            vertical-align: top;
+        }
+        .main{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 25px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .adress{
+           
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 27px;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=email], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=tel], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-control{
+            width: 100%;
+            max-width: 100%;
+            min-height: 100px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+          
+        input[type=submit] {
+            width: 0;
+            background-color: #ffa250;
+            color: white;
+            
+            padding: 8px;
+            padding-left: 14px;
+            padding-right: 44px;
+            
+            
+            border-radius: 2px ;
+            cursor: pointer;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 700;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+            vertical-align: middle;
+            text-transform: uppercase;
+            
+        }
+        
+          
+        input[type=submit]:hover {
+            background-color: #ffa200;
+            color: black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <div class="padtb">
+            <div class="padlr">
+                <div class="small-size">
+                <p class="main">TALK TO US</p>
+                <div class="adress">
+                    <p>TagZ, 630, 14th cross, Domlur stage 1, Bangalore-560071</p>
+                    <p>08047112330</p>
+                    <p>Call +91 70193 10491 for any distributor/bulk order enquiry</p>
+                    <p>help@tagzfoods.com</p>
+                    <p>10AM-7PM</p>
+                </div>
+                <div class="forms">
+                    <form action="/action_page.php">
+                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                        <input type="email"  id="email1" placeholder="name@example.com">
+                        
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        <br>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comment here!" ></textarea>
+                        <input type="submit" value="Send ">
+                      </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

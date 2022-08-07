@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .content{
+            background-color: rgb(147, 223, 147);
+           
+            width: 300vw;
+            height: 100vh;
+        }
+        .box{
+            background-color: brown;
+            color: white;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: widthanimate;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-iteration-count: 5;
+            animation-direction:alternate-reverse ;    
+        }
+        @keyframes widthanimate{
+            from{
+                width: 300px;
+            }
+            to{width: 600px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box">my name  is saurabh</div>
+    </div>
+</body>
+</html>

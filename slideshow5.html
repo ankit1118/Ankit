@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide5</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .body{
+            margin: 0;
+            padding: 0;
+        }
+        .slide{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 191, 0);
+            animation-name: bodycolor;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bodycolor {
+            0%   {background-color:rgb(255, 191, 0)}
+            25%  {background-color:rgba(150, 245, 9, 0.859);}
+            50%  {background-color:rgba(9, 233, 245, 0.859);}
+            75%  {background-color:rgba(150, 245, 9, 0.859);}
+            100% {background-color:rgb(255, 191, 0);}
+        }
+        .slide1{
+            padding-top: 3%;
+            padding-bottom: auto;
+        }
+        .slide2{
+            padding-left: 5%;
+            padding-right: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .slide3{
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+        .slideshow-container {
+            position: relative;
+            background: #f1f1f1f1;
+        }  
+        .mySlides {
+            display: none;
+            padding: 80px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+           /* text-align: center;*/
+        }  
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+          
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+        }
+          
+        .dot-container {
+              text-align: center;
+              padding: 20px;
+              padding-top: 20px;
+             /* background: #ddd;*/
+        }
+          
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+          
+        .active, .dot:hover {
+            background-color: #380505;
+        }
+          
+        q {font-style: italic;}
+          
+        .author {
+            color: cornflowerblue;
+            padding-top: 7px;
+        }
+
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="slide">
+        <div class="slide1">
+            <div class="slide2">
+                <div class="slide3">
+                    <div class="1slide" style="text-align: center;">
+                        <h2>#[TASTY]MONIALS</h2>
+                    </div>
+                    <div class="Sslide" style="padding-top: 50px; padding-bottom:50px;">
+                        <div class="s1slide">
+                            
+
+                            <div class="slideshow-container">
+
+                                <div class="stardoublecomma">
+
+                                    <span class="comma" style="padding-left: 60px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50"  fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                                            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                                        </svg>
+                                    </span>
+                                    
+                                    <span class="box" style="padding-left: 10px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" style="padding-bottom: 10px;" fill="rgb(255, 191, 0)" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" style="padding-bottom: 10px;" fill="rgb(255, 191, 0)" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" style="padding-bottom: 10px;" fill="rgb(255, 191, 0)" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" style="padding-bottom: 10px;" fill="rgb(255, 191, 0)" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" style="padding-bottom: 10px;" fill="rgb(255, 191, 0)" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                    </span> 
+                                </div>  
+                                    
+                                
+
+                                    <div class="mySlides">
+
+                                        <div class="start" style="text-align:start; font-weight: bold; font-size:17px; color:rgba(39, 37, 37, 0.697); padding-bottom:8px; padding-left:0;">
+                                            <span>Kids Love it !!</span>
+                                        </div>
+
+                                       <q>We got a pack of 5 and both the kids and us adults loved it Amazing product healthy and way better than other existing chips options, and really tasty. As a young family we welcome this product as it allows for genuinely fun snacking without the guilt.</q>
+                                       <p class="author" style="text-align: center;">- PRIYA VEEMBUR</p>
+                                    </div>
+                                
+
+                                
+                                    <div class="mySlides">
+
+                                        <div class="start" style="text-align:start; font-weight: bold; font-size:17px; color:rgba(39, 37, 37, 0.697); padding-bottom:8px; padding-left:0;">
+                                            <span>Tasty, enriched flavours, high quality and price add up to a complete package</span>
+                                        </div>
+
+                                       
+                                        <q>I enjoyed every single bite of it. Each flavours can be differentiated. Considering the quality, the price is reasonable. Ideal for those who want a different taste from the regular ones. Quality of packaging is too good. I would recommend everyone to have a try to this awesome product.</q>
+                                        <p class="author" style="text-align: center;">- RIDDHI MUKHERJEE</p>
+                                        
+                                        
+                                    </div>
+                                
+                                
+                                <div class="mySlides">
+                                    
+                                    <div class="start" style="text-align:start; font-weight: bold; font-size:17px; color:rgba(39, 37, 37, 0.697); padding-bottom:8px; padding-left:0;">
+                                        <span>Appealing and cracking good Snack...</span>
+                                    </div>
+
+                                    <q>From a vibrantly colourful pack stacked at the store to an appetizing wholesome snack, these chips are as good in laste as they are for our health.</q>
+                                    <p class="author" style="text-align: center;">- PRIYANSHU</p>
+                                </div>
+
+                                <div class="mySlides">
+
+                                    <div class="start" style="text-align:start; font-weight: bold; font-size:17px; color:rgba(39, 37, 37, 0.697); padding-bottom:8px; padding-left:0;">
+                                        <span>Crispy Deliciousness :P</span>
+                                    </div>
+
+                                    <q>Already tried all 3 flavors and still not able to decide which one is best as I loved all of them. I was looking for some nachos option and end up ordering this and to my delight they turned out to be really good.</q>
+                                    <p class="author" style="text-align: center;">- CHITRANGANA</p>
+                                </div>
+
+                                <div class="mySlides">
+
+                                    <div class="start" style="text-align:start; font-weight: bold; font-size:17px; color:rgba(39, 37, 37, 0.697); padding-bottom:8px; padding-left:0;">
+                                        <span>CRAZY TASTY</span>
+                                    </div>
+
+                                    <q>Nothing makes me happier than a snack that i know is tasty and healthy at the same time. This one is bang on on bothi.</q>
+                                    <p class="author" style="text-align: center;">- PRATYUSH RAI</p>
+                                </div>
+
+                                <div class="mySlides">
+
+                                    <div class="start" style="text-align:start; font-weight: bold; font-size:17px; color:rgba(39, 37, 37, 0.697); padding-bottom:8px; padding-left:0;">
+                                        <span>ONE PACKET GIVES DOUBLE DHAMALLLL</span>
+                                    </div>
+
+                                    <q>These popped chips are anything but healthy. Sure, they are not fried or baked; however, they are full of chemicals. The worst part is they have MSG in hidden form and other flavor enhancer like disodium guanylate and disodium inositate, which are expensive and are only added if there is some for source of glutamate already present in the food. These guys deliberately didn’t put a photo of the ingredients. I would stay away from this crap.</q>
+                                    <p class="author" style="text-align: center;">- PRIYANSH</p>
+                                </div>
+                                
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+                                
+                            </div>
+                                
+                            <div class="dot-container" >
+                                <span class="dot" onclick="currentSlide(1)"></span> 
+                                <span class="dot" onclick="currentSlide(2)"></span> 
+                                <span class="dot" onclick="currentSlide(3)"></span> 
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                                <span class="dot" onclick="currentSlide(6)"></span>
+                                
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+</body>
+</html>
